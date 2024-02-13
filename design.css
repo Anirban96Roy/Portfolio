@@ -4,6 +4,11 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+:root {
+    --main-color: aqua;
+    --text-color:white; /* Example color value */
+}
+
 body
 {
     background:#080808;
@@ -177,6 +182,271 @@ h3{
     background-color: #ff004f;
     color: #fff;
     cursor: pointer;
+
+}
+/*about*/
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--i);
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.about-content p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: aqua; /* Text color */
+    margin-bottom: 20px;
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px;
+}
+.heading
+{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: aqua;
+    padding-top: 7rem;
+}
+.about-img
+{
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img img {
+    width: 60%; /* Adjust the width as needed */
+    border-radius: 10px; /* Adjust the border-radius for desired shape */
+    border: .2rem solid var(--main-color);
+    object-fit: cover; /* Ensure the image covers the specified area */
+    clip-path: inset(0 0 0 0); /* Adjust the inset values for the secure portion */
+}
+
+.btn-box a:hover {
+    color: aqua;
+}
+
+.btn-box a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s; /* Adjust transition property */
+}
+
+.btn-box a:hover::after {
+    width: 100%;
+}
+
+/*education*/
+.education
+{
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.education-row .educaion-column{
+    flex:1 1 40rem;
+
+}
+.educaion-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2 rem;
+}
+.educaion-column .education-box{
+    border-left: .2rem solid var(--main-color);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-box .education-content::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    left: -1.1rem;
+ 
+}
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+}
+.education-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height:100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+.education-content .content:hover::before{
+    width: 100%;
+}
+.education-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.education-content .content .year i{
+    padding-right: 0.5rem;
+}
+
+/*skill*/
+.skill{
+    min-height: auto;
+    padding-bottom: 7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.skill .skill-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.skill-row .skill-column{
+    flex: 1 1 40rem;
+}
+
+.skill-box .skill-content{
+   position: relative;
+   border: .2rem solid var(--main-color);
+   border-radius: .6rem;
+   padding: .5rem 1.5rem; 
+}
+.skill-content .progress{
+    padding: 1rem 0;
+}
+.skill-content .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skill-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(6) .bar span{
+    width: 60%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(7) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(8) .bar span{
+    width: 60%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(9) .bar span{
+    width: 90%;
+}
+
+/* contact*/
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin:0 auto;
+    text-align: center;
+}
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height:100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: transparent;
+    border-radius: 0.6rem;
+    border: .2rem solid var(--main-color);
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: var(--text-color);
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea {
+    resize: none;
+}
+.contact form .btn-box .btn{
+    background-color: aqua;
+    width: 200px; 
+    height: 60px;
+    font-size: 1.5rem; 
 
 }
 
