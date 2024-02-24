@@ -7,31 +7,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio-Anirban</title>
         <link rel="stylesheet" href="design.css">
-
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <h3> AR.</h3>
-                    <ul>
+       
+            <header class="header">
+
+                <a href="#" class="logo">AR.</a>
+
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+                <nav class="navbar">
                         
-                            <li> <a href="#" style="--i:1;">Home</a></li>
-                            <li> <a href="#" style="--i:2;">About</a></li>
-                            <li> <a href="#" style="--i:3;">Education</a></li>
-                            <li> <a href="#" style="--i:4;">Scholarship/Award</a></li>
-                            <li> <a href="#" style="--i:5;">projects</a></li>
-                            <li> <a href="#" style="--i:6;">Skills</a></li>
-                            <li><a href="#" style="--i:7;">Contact</a></li>
+                            <a href="#home" class="active">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#education">Education</a>
+                            <a href="#award">Scholarship/Award</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#contact">Contact</a>
+                            <span class="active-nav"></span>
                         
-                    </ul>
                 </nav>
-                
+            </header>  
                 
 
-            </div>
-        </div>
-        <section class="home">
+
+
+        <section class="home" id="home">
                 <div class="header-text">
                     <h2>Hi,I am</h2>
                     <h1><span>Anirban Roy</span></h1>
@@ -40,15 +43,15 @@
                     <p>
                         I hail from the vibrant city of Jhenidah, nestled in the heart of Bangladesh. Growing up in this culturally rich environment has shaped my perspectives and provided me with a diverse range of experiences. My home, a cozy haven, is filled with warmth and memories. It's a place where I find inspiration and solace, and it has played a significant role in shaping who I am today.
                     </p>
-                    <div class="social-icon">
-                    <ul>
-                        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a> </li>
-                        <li><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> </li>
-                        <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a> </li>
-                        <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> </li>
-                    </ul>
+                    <div class="home-sci">
+                        
+                            <a href="#" ><i class='bx bxl-facebook' ></i></a> 
+                            <a href="#" ><i class='bx bxl-twitter' ></i></a> 
+                            <a href="#" ><i class='bx bxl-linkedin' ></i></a> 
+                            <a href="#" ><i class='bx bxl-github' ></i></a> 
+                    
 
-                </div>
+                    </div>
                 </div>
                 
                 <div class="home-img">
@@ -56,22 +59,19 @@
                 </div>
         </section>
         
-       <!-- about -->
+    <!-- about -->
         <section class="about" id="about">
             <h2 class="heading">About <span>Me</span></h2>
         
 
             <div class="about-img">
-                <img src="r/IMG-20240117-WA0001.jpg" alt="">
+                <img src="r/anirban.jpg" alt="">
                 <span class="square-span"></span>
             </div>
             <div class="about-content">
                 <p>I am Anirban Roy, currently a student at Khulna University of Engineering & Technology (KUET), majoring in Computer Science and Engineering. With a profound love for physics, mathematics, and programming, I am deeply engaged in exploring the intricacies of these disciplines.Beyond academics, I actively participate in various co-curricular activities such as singing, reciting poetry, and engaging in debates, which not only enrich my college experience but also hone my communication skills. My interest in machine learning and AI further fuels my aspirations, propelling me towards a promising career in cutting-edge technology.Overall, I am a dynamic individual with a diverse range of interests and pursuits, poised to make meaningful contributions in both academic and professional realms.</p>
                 
             </div>
-        <div class="btn-box">
-            <a href="#" class="btn">Read more...</a>
-        </div>
 
         </section>
 
@@ -86,8 +86,8 @@
                         <div class="education-content">
                             <div class="content">
                                 <div class="year"><i class="fa-solid fa-calendar-days"></i>2017-2018</div>
-                                <h3>UnderGraduate</h3>
-                                <p>ajjjjjjjjjjjjjkkkkkkkkkkk</p>
+                                <h3>S.S.C</h3>
+                                <p><span>School: Shailkupa Pilot High School</span></p>
 
                             </div>
                         </div>
@@ -95,8 +95,8 @@
                         <div class="education-content">
                             <div class="content">
                                 <div class="year"><i class="fa-solid fa-calendar-days"></i>2018-2020</div>
-                                <h3>UnderGraduate</h3>
-                                <p>ajjjjjjjjjjjjjkkkkkkkkkkk</p>
+                                <h3>H.S.C</h3>
+                                <p>College: Shailkupa Govt. Degree College</p>
 
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                             <div class="content">
                                 <div class="year"><i class="fa-solid fa-calendar-days"></i>2021-Current</div>
                                 <h3>UnderGraduate</h3>
-                                <p>ajjjjjjjjjjjjjkkkkkkkkkkk</p>
+                                <p>University: Khulna University of Engineering And Technology</p>
 
                             </div>
                         </div>
@@ -119,9 +119,9 @@
 
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class="fa-solid fa-calendar-days"></i>2021-Current</div>
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i>2021</div>
                                 <h3>Udvash</h3>
-                                <p>ajjjjjjjjjjjjjkkkkkkkkkkk</p>
+                                <p>QNA Department.</p>
 
                             </div>
                         </div>
@@ -132,28 +132,110 @@
             </div>
         </section>
 
+        <!--awards-->
+        <section class="award" id="award">
+            <h2 class="heading">Scholarship & <span>Awards</span></h2>
+            <div class="award-row">
+                <div class="award-column">
+                    <h3 class="title">Scholarship</h3>
+                    <div class="award-box">
+
+                        <div class="award-content">
+                            <div class="content">
+                                <ul>
+                                    <li>1.Dr.Uyaliuzzaman Foundation Scholarship(Talentpool-4th)</li>
+                                    <li>2.P.S.C(Talentpool)</li>
+                                    <li>3.J.S.C(Talentpool)</li>
+                                    <li>4.S.S.C(Talentpool)</li>
+                                    <li>5.H.S.C(Talentpool)</li>
+                                    <li>6.Islamic Foundation Scholarship(Talentpool)</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                    
+
+                    </div>
+                </div>
+
+                <div class="award-column">
+                    <h3 class="title">Awards</h3>
+                    <div class="award-box">
+
+                        <div class="award-content">
+                            <div class="content">
+                                <ul>
+                                    <li>1.Bangladesh Shishu Academy Awards 2013(Quiz-1st(District Level))</li>
+                                    <li>2.Islamic Foundation Award 2014(Poetry recitation-1st(upazilla Level))</li>
+                                    <li>3.Srijonshil Medha Onneson 2014(District level champion)</li>
+                                    <li>4.Science Fair 2014(Project-1st) </li>
+                                    <li>5.Science Fair 2014(Speech-1st)</li>
+                                    <li>6.Srijonshil Medha Onneson 2015(Division level champion)</li>
+                                    <li>7.Math Olimpiad 2016(5th-Division level) </li>
+                                    <li>8.Debate Compition 2017(1st)</li>
+                                    <li>9.National Education Week Compition(Speech-1st) </li>
+                                    <li>10.38th National Science And Technology Fair 2017(Speech-1st)</li>
+                                    <li>11.Poetry Recitation of Kazi Nazrul Islam(Runners-up) </li>
+                                    
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--projects-->
+        <section class="projects" id="projects">
+            
+                
+                    <h1 class="heading">My <span>Projects</span></h1>
+                    <div class="portfolio-container">
+                        <div class="portfolio-box">
+                            <img src="r/diet_mart.jpg" alt="">
+                            <div class="portfolio-layer">
+                                <h4>Diet Mart</h4>
+                                <p>kkkkkkkkkkkkk</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div> 
+                        <div class="portfolio-box">
+                            <img src="r/diet_mart.jpg" alt="">
+                            <div class="portfolio-layer">
+                                <h4>Diet product maangement</h4>
+                                <p>kkkkkkkkkkkkk</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div> 
+                        <div class="portfolio-box">
+                            <img src="r/diet_mart.jpg" alt="">
+                            <div class="portfolio-layer">
+                                <h4>Diet product maangement</h4>
+                                <p>kkkkkkkkkkkkk</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+
+                
+        
+        </section>
+
+
+
         <!--skill-->
-        <section class="skill" id="skill">
+        <section class="skills" id="skills">
             <h2 class="heading">My Skills</h2>
             <div class="skill-row">
                 <div class="skill-column">
-            
+                    <h3 class="title">Coding Skills</h3>
                     <div class="skill-box">
                         <div class="skill-content">
-                            <div class="progress">
-                                <h3>HTML<span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>JavaScript<span>75%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>CSS<span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
 
                             <div class="progress">
                                 <h3>C<span>90%</span></h3>
@@ -175,6 +257,31 @@
                                 <h3>Java<span>60%</span></h3>
                                 <div class="bar"><span></span></div>
                             </div>
+                        
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skill-column">
+                    <h3 class="title">Devolopment Skills</h3>
+                    <div class="skill-box">
+                        <div class="skill-content">
+                            <div class="progress">
+                                <h3>HTML<span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>JavaScript<span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>CSS<span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
                             <div class="progress">
                                 <h3>SQL,MySQL<span>90%</span></h3>
                                 <div class="bar"><span></span></div>
@@ -222,6 +329,16 @@
         </div>
     </form>
 </section>
+
+ <!--footer section-->
+ <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 By Anirban</p>
+    </div>
+    <div class="footer-icontop">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+ </footer>
 
         <script src="https://kit.fontawesome.com/1875b01c1a.js" crossorigin="anonymous"></script>
         <script src="http://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
