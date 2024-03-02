@@ -1,0 +1,47 @@
+﻿/* Apply basic styling to the form */
+#form1 {
+    margin: 50px auto;
+    width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply styling to the table */
+.auto-style1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Apply styling to table cells */
+.auto-style2, .auto-style5 {
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+/* Apply styling to textboxes */
+.auto-style6 input[type="text"],
+.auto-style6 input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Apply styling to the button */
+.auto-style4 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Apply styling to the error messages */
+span[id*="RequiredFieldValidator"] {
+    color: red;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+}
