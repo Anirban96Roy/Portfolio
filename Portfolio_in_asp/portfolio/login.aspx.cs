@@ -25,6 +25,7 @@ namespace Portfolio_in_asp.portfolio
             SqlConnection con = new SqlConnection(cs);
             string query = "select * from login where username = @user and password = @pass";
             SqlCommand cmd = new SqlCommand(query, con);
+
             cmd.Parameters.AddWithValue("@user", usertextbox.Text);
             cmd.Parameters.AddWithValue("@pass", passtextbox.Text);
             con.Open();

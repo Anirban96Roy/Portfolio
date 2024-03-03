@@ -10,6 +10,13 @@
     <title>Portfolio-Anirban</title>
     <link rel="stylesheet" href="design.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 66;
+            margin-top: 29;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,7 +34,7 @@
             <a href="#award">Scholarship/Award</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#interested">Interested</a>
             <span class="active-nav"></span>
 
         </nav>
@@ -299,39 +306,31 @@
     </section>
 
 
-    <!--contact section-->
-  <section class="contact" id="contact">
-        <h2 class="heading">Contact Me.</h2>
-        <form id="contactForm" runat="server" method="post" action="Contact.aspx">
-            <div class="input-box">
-                <div class="input-field">
-                    <asp:TextBox ID="txtFullName" runat="server" placeholder="Full Name" CssClass="form-control" ></asp:TextBox>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <asp:TextBox ID="txtEmail" runat="server" placeholder="Email" CssClass="form-control" ></asp:TextBox>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <asp:TextBox ID="txtMobileNumber" runat="server" placeholder="Mobile Number" CssClass="form-control" ></asp:TextBox>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <asp:TextBox ID="txtSubject" runat="server" placeholder="Email subject" CssClass="form-control" ></asp:TextBox>
-                    <span class="focus"></span>
-                </div>
-            </div>
-            <div class="textarea-field">
-                <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine" Columns="30" Rows="10" placeholder="Your message" CssClass="form-control"></asp:TextBox>
-                <span class="focus"></span>
-            </div>
-            <div class="btn-box">
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" Cssclass="btn" />
-            </div>
-        </form>
+    <!--Interested section-->
+  <section class="interested" id="interested">
+        <h2 class="heading">Interesed in.</h2>
+          <form id="form1" runat="server" class="abc">
+        <div>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" CssClass="auto-style1" ForeColor="#333333" GridLines="None" Height="446px"  Width="390px">
+                <AlternatingRowStyle BackColor="White" />
+                <Columns>
+                    <asp:BoundField DataField="ID" HeaderText="ID" />
+                    <asp:BoundField DataField="name" HeaderText="Name" />
+                    <asp:BoundField DataField="feild" HeaderText="Field" />
+                    
+                </Columns>
+                <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+                <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+                <SortedAscendingCellStyle BackColor="#FDF5AC" />
+                <SortedAscendingHeaderStyle BackColor="#4D0000" />
+                <SortedDescendingCellStyle BackColor="#FCF6C0" />
+                <SortedDescendingHeaderStyle BackColor="#820000" />
+            </asp:GridView>
+        </div>
+    </form>
     </section>
    
 
